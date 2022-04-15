@@ -1,3 +1,4 @@
+// eslint-disable-next-line max-classes-per-file
 class GofThroneCharacter {
   state = "alive";
 
@@ -11,9 +12,21 @@ class GofThroneCharacter {
   // lannisterFatherAndSon() { return Geoffrey + Jaime;}
 }
 
-const Geoffrey = new GofThroneCharacter("Geoffrey", "Lannister", 14, true);
+class King extends GofThroneCharacter {
 
-const Jaime = new GofThroneCharacter("Jaime", "Lannister", 35, true);
+constructor(years_of_reign) {
+  threatening() {
+return "your´e all going to die!!!!!!!!!"
+  }
+  warning() {
+    return " you killed my father....., Prepare to die!!!"
+  }
+}
+}
+
+const geoffrey = new King("Geoffrey", "Lannister", 14, true);
+
+const jaime = new King("Jaime", "Lannister", 35, true);
 // console.log(caprese.base);
 // console.log(caprese);
 const lannisterFatherAndSon = () => Geoffrey + Jaime;
