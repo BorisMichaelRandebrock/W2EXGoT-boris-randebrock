@@ -13,6 +13,7 @@ class GofThroneCharacter {
 }
 
 class King extends GofThroneCharacter {
+  super(name,family,age)
 
 constructor(years_of_reign) {
   threatening() {
